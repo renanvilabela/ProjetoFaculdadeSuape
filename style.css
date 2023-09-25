@@ -23,6 +23,11 @@ header .header-container #notification {
   margin: 10px 0px;
   cursor: pointer;
 }
+header .header-container #notification img {
+  width: 20px;
+  height: 15px;
+  margin: 0px 8px;
+}
 
 main {
   background-color: white;
