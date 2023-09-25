@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: #1E3D47;
 }
 
 header{ 
     .header-container{
         display: flex;
         justify-content: space-between;
+        background-color: #1E3D47;
         h1{
             color: #1ABC9C;
             font-size: large;
@@ -21,6 +21,28 @@ header{
             border: 0px;
             border-radius: 5px;
             margin: 10px 0px;
+        }
+    }
+}
+
+main{
+    background-color: white;
+    height: 100%;
+    .map-area{
+        margin: 20px 0px;
+    }
+    .call-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button{
+            background-color: #1ABC9C;
+            border: 0px;
+            border-radius: 35px;
+            width: 201px;
+            height: 35px;
+            margin: 5px 0px;
+            color: white;
         }
     }
 }
