@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Security Suape</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../app/form/form.css">
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1>SecuritySuape</h1>
-            <button id="notification">
-                <img src="assets/packard-bell.png" alt="sino de notificação">
+            <button id="notification" onclick="notificação()">
+                <img src="../assets/packard-bell.png" alt="sino de notificação">
             </button>
         </div>
     </header>
@@ -20,8 +21,8 @@
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xuWAcrGE2VM_6hgva5-GOVkzYUNTX0k&ehbc=2E312F" width="315" height="480"></iframe>
         </div>
         <section class="call-area">
-            <button id="open">Abrir chamado</button>
-            <button id="emergency">Abrir chamado urgente</button>
+            <button id="open" onclick="AbrirChamado()">Abrir chamado</button>
+            <button id="emergency" onclick="Emergencial()">Abrir chamado urgente</button>
         </section>
     </main>
     <footer></footer>
