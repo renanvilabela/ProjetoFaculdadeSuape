@@ -7,6 +7,7 @@ aside .form-area {
 }
 aside .form-area button {
   width: 150px;
+  height: 20px;
   border: none;
   margin: 5px 0px;
   background-color: #1ABC9C;

@@ -6,7 +6,8 @@ var emergency = document.querySelector("#emergency");
 
 function AbrirChamado(){
     window.alert("abre chamado")
-    fetch('form/form.html')
+    //arquivo que será lido ↓
+    fetch('form/form.html') 
         .then(response => response.text())
         .then(data => {
             const main = document.querySelector('main');
