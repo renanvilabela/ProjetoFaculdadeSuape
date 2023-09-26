@@ -13,6 +13,9 @@ function AbrirChamado(){
             const main = document.querySelector('main');
             main.innerHTML = data;
         })
+        .catch(error => {
+            console.error('Erro ao carregar o formulário', error);
+        })
 }
 
 function Emergencial(){
