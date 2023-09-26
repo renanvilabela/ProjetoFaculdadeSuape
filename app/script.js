@@ -6,7 +6,7 @@ var emergency = document.querySelector("#emergency");
 
 function AbrirChamado(){
     section.innerHTML = `
-
+        
     `
 }
 
@@ -15,5 +15,5 @@ function Emergencial(){
 }
 
 function notification(){
-    
+
 }
