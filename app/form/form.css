@@ -1,0 +1,14 @@
+aside .form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+aside .form-area button {
+  width: 150px;
+  border: none;
+  margin: 5px 0px;
+  background-color: #1ABC9C;
+  border-radius: 5px;
+}/*# sourceMappingURL=form.css.map */
