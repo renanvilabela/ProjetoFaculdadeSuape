@@ -5,15 +5,19 @@ var open = document.querySelector("#open");
 var emergency = document.querySelector("#emergency"); 
 
 function AbrirChamado(){
-    section.innerHTML = `
-        
-    `
+    window.alert("abre chamado")
+    fetch('form/form.html')
+        .then(response => response.text())
+        .then(data => {
+            const main = document.querySelector('main');
+            main.innerHTML = data;
+        })
 }
 
 function Emergencial(){
-
+    window.alert("abre chamado urgente")
 }
 
-function notification(){
-
+function notificação(){
+    console.log("olha o zap")
 }
