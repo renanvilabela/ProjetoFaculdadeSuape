@@ -5,6 +5,14 @@ aside .form-area {
   align-items: center;
   margin: 15px 0px;
 }
+aside .form-area #nome-client {
+  width: 250px;
+  height: 20px;
+}
+aside .form-area #problem-report {
+  width: 250px;
+  height: 180px;
+}
 aside .form-area button {
   width: 150px;
   height: 20px;
@@ -12,6 +20,7 @@ aside .form-area button {
   margin: 5px 0px;
   background-color: #1ABC9C;
   border-radius: 5px;
+  color: white;
 }
 
 .emergencial-area-form {
@@ -19,14 +28,6 @@ aside .form-area button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.emergencial-area-form #nome-client {
-  width: 250px;
-  height: 20px;
-}
-.emergencial-area-form #problem-report {
-  width: 250px;
-  height: 180px;
 }
 .emergencial-area-form #red-button {
   width: 150px;

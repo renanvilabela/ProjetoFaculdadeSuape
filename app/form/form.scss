@@ -5,6 +5,14 @@ aside{
         justify-content: center;
         align-items: center;
         margin: 15px 0px;
+        #nome-client{
+            width: 250px;
+            height: 20px;
+        }
+        #problem-report{
+            width: 250px;
+            height: 180px;
+        }
     button{
         width: 150px;
         height: 20px;
@@ -12,6 +20,7 @@ aside{
         margin: 5px 0px;
         background-color: #1ABC9C;
         border-radius: 5px;
+        color: white;
     }
     }
 }
@@ -21,14 +30,6 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    #nome-client{
-        width: 250px;
-        height: 20px;
-    }
-    #problem-report{
-        width: 250px;
-        height: 180px;
-    }
     #red-button{
         width: 150px;
         height: 20px;

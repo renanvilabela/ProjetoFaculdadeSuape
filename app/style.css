@@ -52,4 +52,10 @@ main .call-area button {
   margin: 5px 0px;
   color: white;
   cursor: pointer;
+}
+
+footer {
+  display: flex;
+  background-color: #1E3D47;
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
