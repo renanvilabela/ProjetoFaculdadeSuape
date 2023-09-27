@@ -12,4 +12,20 @@ aside .form-area button {
   margin: 5px 0px;
   background-color: #1ABC9C;
   border-radius: 5px;
+}
+
+.emergencial-area-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emergencial-area-form #red-button {
+  width: 150px;
+  height: 20px;
+  border: none;
+  margin: 5px 0px;
+  background-color: #bc1a1a;
+  color: white;
+  border-radius: 5px;
 }/*# sourceMappingURL=form.css.map */
