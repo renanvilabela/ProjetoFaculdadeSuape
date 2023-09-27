@@ -21,13 +21,24 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    #nome-client{
+        width: 250px;
+        height: 20px;
+    }
+    #problem-report{
+        width: 250px;
+        height: 180px;
+    }
     #red-button{
         width: 150px;
         height: 20px;
         border: none;
-        margin: 5px 0px;
+        margin: 10px 0px;
         background-color: #bc1a1a;
         color: white;
         border-radius: 5px;
+    }
+    .checklist{
+        margin: 10px 0px 5px;
     }
 }
