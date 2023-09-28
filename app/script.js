@@ -7,7 +7,6 @@ let tipos = [] //array vazia
 
 //função que abre o formulário
 function AbrirChamado(){
-    window.alert("abre chamado")
     //verifica se o conteúdo original ainda não foi armazenado
     if(!origin){
         origin = document.querySelector('main').innerHTML; //armazena conteúdo original
