@@ -15,11 +15,11 @@ aside .form-area {
   align-items: center;
   margin: 15px 0px;
 }
-aside .form-area #nome-client {
+aside .form-area #Identificador {
   width: 250px;
   height: 20px;
 }
-aside .form-area #problem-report {
+aside .form-area #problema {
   width: 250px;
   height: 180px;
 }

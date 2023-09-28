@@ -1,18 +1,18 @@
 <aside>
     <button id="back" onclick="voltar()">Voltar</button>
-    <div class="form-area">
+    <form class="form-area">
         <label for="nome">Identificador</label>
-        <input type="text" id="nome-client" name="nome">
-        <label for="chamado">Digite o problema:</label>
-        <input type="text" id="problem-report" name="chamado">
+        <input type="text" id="identificador" name="identificador">
+        <label for="problema">Digite o problema:</label>
+        <input type="text" id="problema" name="problema">
         <div class="checklist">
             <label for="predial">Predial</label>
-            <input type="checkbox" id="type" name="predial">
+            <input type="checkbox" id="type" name="tipo" value="predial">
             <label for="pessoal">Pessoal</label>
-            <input type="checkbox" id="type" name="pessoal">
+            <input type="checkbox" id="type" name="tipo" value="pessoal">
             <label for="estrtura">Estrutural</label>
-            <input type="checkbox" id="type" name="Estrutural">
+            <input type="checkbox" id="type" name="tipo" value="Estrutural">
         </div>
-        <button>Enviar</button>
-    </div>
+        <button type="button" onclick="sendForm()">Enviar</button>
+    </form>
 </aside>
