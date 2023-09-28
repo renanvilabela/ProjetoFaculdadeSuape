@@ -32,6 +32,18 @@ function voltar(){
     }
 }
 
+function sendForm(){
+    const formulario = document.querySelector('.form-area');
+    //use o método FormData para coletar os dados do formulário
+    const formData = new FormData(formulario);
+    //você pode acessar os valores do formData usando get() ou getALL() para campos de múltiplos valores (como checkboxes)
+    const identificador = formData.get('identificador')
+    const problema = formData.get('problema');
+    const tipos = formData.getAll('tipo')
+
+    console.log(`Identificador: ${identificador}\nProblema: ${problema}\nTipos: ${tipos.join(', ')}`);
+}
+
 function YourCalls(){
     window.alert("seus chamados")
 }
