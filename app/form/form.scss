@@ -13,7 +13,7 @@ aside{
             width: 250px;
             height: 180px;
         }
-    button{
+         button{
         width: 150px;
         height: 20px;
         border: none;
@@ -21,7 +21,10 @@ aside{
         background-color: #1ABC9C;
         border-radius: 5px;
         color: white;
-    }
+        }
+        .checklist{
+        margin: 10px 0px 5px;
+        }
     }
 }
 
@@ -38,8 +41,5 @@ aside{
         background-color: #bc1a1a;
         color: white;
         border-radius: 5px;
-    }
-    .checklist{
-        margin: 10px 0px 5px;
     }
 }

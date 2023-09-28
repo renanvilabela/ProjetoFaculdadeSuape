@@ -22,6 +22,9 @@ aside .form-area button {
   border-radius: 5px;
   color: white;
 }
+aside .form-area .checklist {
+  margin: 10px 0px 5px;
+}
 
 .emergencial-area-form {
   display: flex;
@@ -37,7 +40,4 @@ aside .form-area button {
   background-color: #bc1a1a;
   color: white;
   border-radius: 5px;
-}
-.emergencial-area-form .checklist {
-  margin: 10px 0px 5px;
 }/*# sourceMappingURL=form.css.map */
