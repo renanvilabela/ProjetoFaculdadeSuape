@@ -1,4 +1,14 @@
 aside{
+    #back{
+        width: 100px;
+        height: 20px;
+        border: none;
+        margin: 15px 10px;
+        background-color: #1ABC9C;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
     .form-area{
         display: flex;
         flex-direction: column;
@@ -21,25 +31,10 @@ aside{
         background-color: #1ABC9C;
         border-radius: 5px;
         color: white;
+        cursor: pointer;
         }
         .checklist{
         margin: 10px 0px 5px;
         }
-    }
-}
-
-.emergencial-area-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    #red-button{
-        width: 150px;
-        height: 20px;
-        border: none;
-        margin: 10px 0px;
-        background-color: #bc1a1a;
-        color: white;
-        border-radius: 5px;
     }
 }
