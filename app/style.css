@@ -58,8 +58,9 @@ main .call-area button {
 }
 main #chamados {
   flex-direction: column;
-  border: 1px solid black;
-  width: 220px;
+  width: 310px;
+  padding: 5px;
+  align-items: center;
 }
 main #chamados h2 {
   margin: 10px 0px;
