@@ -13,7 +13,7 @@ header{
         h1{
             color: #1ABC9C;
             font-size: large;
-            margin: 10px 50px 10px 0px;
+            margin: 10px 0px;
         }
         #notification{
             background-color: #1ABC9C;
@@ -55,6 +55,19 @@ main{
             margin: 5px 0px;
             color: white;
             cursor: pointer;
+        }
+    }
+    #chamados{
+        flex-direction: column;
+        border: 1px solid black;
+        width: 220px;
+        h2{
+            margin: 10px 0px;
+            color: #1ABC9C;
+            text-decoration: underline;
+        }
+        p{
+            margin: 5px 0px;
         }
     }
 }
