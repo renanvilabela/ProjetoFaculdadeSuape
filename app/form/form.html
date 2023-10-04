@@ -1,8 +1,6 @@
 <aside>
     <button id="back" onclick="voltar()">Voltar</button>
     <form class="form-area">
-        <label for="nome">Identificador</label>
-        <input type="text" id="identificador" name="identificador">
         <label for="problema">Digite o problema:</label>
         <input type="text" id="problema" name="problema">
         <div class="checklist">
@@ -12,17 +10,6 @@
             <input type="checkbox" id="type" name="tipo" value="pessoal">
             <label for="estrtura">Estrutural</label>
             <input type="checkbox" id="type" name="tipo" value="Estrutural">
-            <div class="columns">
-                <div class="column">
-                  <p><button type="button" onclick="getStream('video')">Grab video</button></p>
-                  
-                  <video controls autoplay style="height:180px; width: 240px;"></video>
-                </div>
-                <div class="column">
-                  <p><button type="button" onclick="getStream('audio')">Grab audio</button></p>
-                  
-                  <audio controls></audio>
-                </div>
               </div>
         </div>
         <button type="button" onclick="sendForm()">Enviar</button>
