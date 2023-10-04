@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #1E3D47;
+}
+
+.log-header{
+    background-color: #0e1a1f;
+    color: #1ABC9C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-area{
+    color: #1ABC9C;
+    display: flex;
+    background-color: #1E3D47;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    input{
+        background-color: white;
+        border-radius: 5px;
+        border: 1px white solid;
+        margin: 10px 0px;
+        height: 20px;
+    }
+    label{
+        font-size: large;
+    }
+    #log-button{
+        background-color: #1ABC9C;
+        width: 100px;
+        height: 30px;
+        border: 1px #1ABC9C solid;
+        border-radius: 10px;
+        font-size: large;
+        color: white;
+    }
+    #log-button:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
