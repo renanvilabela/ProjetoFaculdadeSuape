@@ -2,14 +2,14 @@ console.log("dale")
 
 let origin = null //variável para armazenar o conteúdo original da página
 let problema = '' //variavel vazia
-const identificador = localStorage.getItem('identificador') || '';
+var identificador = localStorage.getItem('identificador') || '';
 let tipos = [] //array vazia
 var target = document.getElementById('target');
 
 
 function fazerLogin() {
     // Obter o identificador do usuário a partir do campo de login
-    const identificador = document.getElementById('log-id').value;
+    identificador = document.getElementById('log-id').value;
   
     // Ocultar a seção de login
     document.querySelector('.login-area').style.display = 'none';
@@ -42,42 +42,35 @@ function AbrirChamado(){
         })
 }
 
-//função para voltar ao conteúdo original
-function voltar(){
-    if (origin){
-        const main = document.querySelector('main');
-        main.innerHTML = origin; //restaura o conteúdo original da <main>
-    }
-}
 
 function sendForm(){
     const formulario = document.querySelector('.form-area');
     //use o método FormData para coletar os dados do formulário
     const formData = new FormData(formulario);
-    //você pode acessar os valores do formData usando get() ou getALL() para campos de múltiplos valores (como checkboxes)
-    identificador = formData.get('identificador')
+    //você pode acessar os valores do formData usando get() ou getAll() para campos de múltiplos valores (como checkboxes)
     problema = formData.get('problema');
     tipos = formData.getAll('tipo');
-
-    //atualiza o valor do indentificador em localStorage
+    
+    //atualiza o valor do identificador em localStorage
     localStorage.setItem('identificador', identificador);
-
+    
     console.log(`Identificador: ${identificador}\nProblema: ${problema}\nTipos: ${tipos.join(', ')}`);
 }
 
+
 function YourCalls(){
     const calls = document.querySelector('#chamados');
-
+    
     //obtenha o identificador em localStorage
     const indentificador = localStorage.getItem('identificador');
-
+    
     //crie o conteúdo html com os dados dos chamados
     if (identificador && problema && tipos.length > 0){
         const conteudoHTML = `
-            <h2>Seus Chamados</h2>
-            <p id="registro">Identificador: ${identificador}</p>
-            <p id="problema-registrado">Problema: ${problema}</p>
-            <p id="check">tipos: ${tipos.join(', ')}</p> 
+        <h2>Seus Chamados</h2>
+        <p id="registro">Identificador: ${identificador}</p>
+        <p id="problema-registrado">Problema: ${problema}</p>
+        <p id="check">tipos: ${tipos.join(', ')}</p> 
         `;
         //insira o conteúdo na "caixa" para exibir os chamados
         calls.innerHTML = conteudoHTML;
@@ -89,3 +82,10 @@ function YourCalls(){
 document.addEventListener('DOMContentLoaded', function(){
     YourCalls(); //chama a função após o carregamento da página
 });
+//função para voltar ao conteúdo original
+function voltar(){
+    if (origin){
+        const main = document.querySelector('main');
+        main.innerHTML = origin; //restaura o conteúdo original da <main>
+    }
+}
