@@ -4,12 +4,16 @@
     font-family: sans-serif;
 }
 
+body{
+    background-color: #1E3D47;
+}
+
 header{ 
     .header-container{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #1E3D47;
+        background-color: #112227;
         h1{
             color: #1ABC9C;
             font-size: large;
@@ -34,11 +38,47 @@ header{
     }
 }
 
+.login-area{
+    color: #1ABC9C;
+    display: flex;
+    background-color: #1E3D47;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    input{
+        background-color: white;
+        border-radius: 5px;
+        border: 1px white solid;
+        margin: 10px 0px;
+        height: 20px;
+    }
+    label{
+        font-size: large;
+    }
+    #log-button{
+        background-color: #1ABC9C;
+        width: 100px;
+        height: 30px;
+        border: 1px #1ABC9C solid;
+        border-radius: 10px;
+        font-size: large;
+        color: white;
+    }
+    #log-button:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
 main{
     background-color: white;
     height: 100%;
+    display: none;
     .map-area{
-       display: flex;
+       display: none;
        justify-content: center;
        margin: 30px 0px;
     }

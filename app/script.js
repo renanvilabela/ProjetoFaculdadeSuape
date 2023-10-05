@@ -1,8 +1,8 @@
 console.log("dale")
 
 let origin = null //variável para armazenar o conteúdo original da página
-var identificador = localStorage.getItem('identificador') || '';
 let problema = '' //variavel vazia
+const identificador = localStorage.getItem('identificador') || '';
 let tipos = [] //array vazia
 var target = document.getElementById('target');
 
@@ -39,13 +39,20 @@ function sendForm(){
     //você pode acessar os valores do formData usando get() ou getALL() para campos de múltiplos valores (como checkboxes)
     identificador = formData.get('identificador')
     problema = formData.get('problema');
-    tipos = formData.getAll('tipo')
+    tipos = formData.getAll('tipo');
+
+    //atualiza o valor do indentificador em localStorage
+    localStorage.setItem('identificador', identificador);
 
     console.log(`Identificador: ${identificador}\nProblema: ${problema}\nTipos: ${tipos.join(', ')}`);
 }
 
 function YourCalls(){
     const calls = document.querySelector('#chamados');
+
+    //obtenha o identificador em localStorage
+    const indentificador = localStorage.getItem('identificador');
+
     //crie o conteúdo html com os dados dos chamados
     if (identificador && problema && tipos.length > 0){
         const conteudoHTML = `
