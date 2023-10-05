@@ -6,6 +6,7 @@
     <title>Security Suape</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../app/form/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -24,16 +25,23 @@
         <button id="log-button" type="button" onclick="fazerLogin()">Login</button>
     </form>
     <main>
-        <h3>Olá</h3>
         <section class="map-area">
             <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xuWAcrGE2VM_6hgva5-GOVkzYUNTX0k&ehbc=2E312F" width="305" height="480"></iframe>
             <button id="open" onclick="AbrirChamado()">Abrir chamado</button>
             <button id="emergency" onclick="YourCalls()">Seus chamados</button>
+            <button id="numbers" onclick="Numbers()">Números de emergencia</button>
             <div id="chamados"></div>
             <!-- </div>
             <button id="askButton">Ask for location</button>
             <div id="target"></div> -->
             <!-- <div id="map"></div> -->
+            <div class="pop-up">
+                <ul>
+                    <li>Polícia: 190</li>
+                    <li>SAMU: 192</li>
+                    <li>Bombeiros: 193</li>
+                </ul>
+            </div>
         </section>
     </main>
     <script src="script.js" defer></script>
