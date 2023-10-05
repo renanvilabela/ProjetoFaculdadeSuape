@@ -108,6 +108,12 @@ main #chamados h2 {
 main #chamados p {
   margin: 5px 0px;
 }
+main .pop-up {
+  display: none;
+}
+main .pop-up ul {
+  list-style: none;
+}
 
 footer {
   display: flex;

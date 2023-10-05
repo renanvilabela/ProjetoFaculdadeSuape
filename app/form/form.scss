@@ -34,7 +34,12 @@ aside{
         cursor: pointer;
         }
         .checklist{
-        margin: 10px 0px 5px;
+        margin: 10px 0px 10px;
         }
+    }
+    .columns{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }

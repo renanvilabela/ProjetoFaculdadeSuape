@@ -34,5 +34,10 @@ aside .form-area button {
   cursor: pointer;
 }
 aside .form-area .checklist {
-  margin: 10px 0px 5px;
+  margin: 10px 0px 10px;
+}
+aside .columns {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=form.css.map */
