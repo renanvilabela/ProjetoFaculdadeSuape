@@ -58,6 +58,14 @@ function sendForm(){
     console.log(`Identificador: ${identificador}\nProblema: ${problema}\nTipos: ${tipos.join(', ')}`);
 }
 
+function Numbers(){
+    const popup = document.querySelector('.pop-up');
+
+    if (popup){
+        popup.style.display = 'flex';
+    }
+}
+
 
 function YourCalls(){
     const calls = document.querySelector('#chamados');
