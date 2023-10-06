@@ -8,8 +8,13 @@ header{
     .header-container{
         display: flex;
         align-items: center;
-        justify-content: center;
-        background-color: #112227;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        background-color: #1E3D47;
+        #menu{
+            height: 25px;
+            width: 27px;
+        }
         h1{
             color: #1ABC9C;
             font-size: large;
