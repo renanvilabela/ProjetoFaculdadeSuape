@@ -1,10 +1,11 @@
-const express = require("express")
+const express = require("express");
+const mongoose = require('mongoose');
 
 const app = express()
-const port = 3000
+const port = 3043
 
 app.get("/", (req, res)=> {
-    res._send("DALE BOY")
+    res.send(`<h1>dale</h1>`)
 })
 
 app.listen(port, () => {
