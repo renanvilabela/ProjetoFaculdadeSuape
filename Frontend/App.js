@@ -1,46 +1,21 @@
-import axios from 'axios';
-import { text } from 'express';
-import React, { useState} from 'react';
-import { View, Text, TextInput, Button} from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const LoginScreen = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+import LoginScreen from './login.js'; // 
+import MainScreen from './main.js';
 
-    const handleLogin = async () => {
-        try {
-            const response = await axios.post('http://localhost:3043/login', {
-                email,
-                password,
-            });
-        } catch (error) {
-            console.error('Erro ao fazer login:', error)
-        }
-    };
+const Stack = createStackNavigator();
 
-    const handleCadastro = () => {
-
-    };
-
-    return (
-        <View>
-            <text>Identificador</text>
-            <TextInput 
-            placeholder='Email'
-            onChangeText={(text) => setEmail(text)}
-            value={email}
-            />
-            <text>Senha</text>
-            <TextInput
-            placeholder="Senha"
-            onChangeText={(text) => setPassword(text)}
-            value={password}
-            secureTextEntry={true}
-            />
-            <button tittle="Login" onPress={handleLogin} />
-            <button tittle="Cadastrar" onPress={handleCadastro} />
-        </View>
-    );
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Main" component={MainScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 };
 
-export default LoginScreen;
+export default App;
