@@ -22,7 +22,7 @@ const MainScreen = ({ navigation }) => {
       <Button
         title="Enviar Imagem"
         onPress={() => {
-          // Adicione a lógica para enviar imagem aqui
+          
         }}
       />
       <MapView>
